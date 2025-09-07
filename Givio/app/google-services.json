@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "211763824984",
+    "project_id": "giveio123",
+    "storage_bucket": "giveio123.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211763824984:android:7672ad5f5567948bc33d2d",
+        "android_client_info": {
+          "package_name": "com.example.givio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGH7Xz03hZEHe3318fRJ88bTOUZNWJ3OE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

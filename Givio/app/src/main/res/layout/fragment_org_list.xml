@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrgListFragment"
+    android:background="@drawable/list"
+    android:layout_marginTop="-5dp"
+    android:layout_marginLeft="-5dp"
+    android:padding="8dp">
+
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvOrgListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Organizations List"
+        android:fontFamily="@font/afacad"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/card_green" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore our Organizations List!"
+        android:fontFamily="@font/afacad"
+        android:textSize="20dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF" />
+
+
+    <!-- RecyclerView to display list of organizations -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewOrganizations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp"
+        android:layout_marginLeft="10dp"
+        android:scrollbars="vertical" />
+
+</FrameLayout>

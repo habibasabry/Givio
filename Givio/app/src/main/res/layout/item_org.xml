@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="110dp"
+    android:layout_gravity="center"
+    card_view:cardCornerRadius="18dp"
+    card_view:cardElevation="6dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/card_bg">
+
+        <!-- logo circle -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/org4"
+            android:contentDescription="logo" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgLogo"
+            android:layout_marginStart="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/imgLogo"
+            android:text="Organization Name"
+            android:fontFamily="@font/afacad"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="@color/card_text" />
+
+        <!-- Short description -->
+        <TextView
+            android:id="@+id/Desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgLogo"
+            android:layout_below="@id/Title"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/imgLogo"
+            android:fontFamily="@font/afacad"
+            android:text="Short description text that explains the organization's mission."
+            android:textSize="15sp"
+            android:textColor="@color/muted_text" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

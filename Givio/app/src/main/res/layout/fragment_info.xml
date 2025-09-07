@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoFragment"
+    android:background="@drawable/list"
+    android:layout_marginLeft="-5dp"
+    android:layout_marginTop="-5dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/info_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Donation Policies"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/afacad"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/card_green"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:id="@+id/info_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="7dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/info_container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal">
+
+            <!-- Project Overview Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#CCD1B2EA"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/overview_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="About the Project"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/overview_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Our donation app connects people who want to give with those in need. By enabling users to donate food, clothes, and household items, we reduce waste while supporting communities."
+                        android:lineSpacingExtra="4dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Item Quality Policy Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_item_quality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:id="@+id/container_item_quality"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#CCD1B2EA"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/item_quality_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Item Quality Policy"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Food -->
+                    <TextView
+                        android:id="@+id/item_food_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🍎 Food"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/item_food_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="✅ Fresh (1 day old)\n⚠ Near expiry (1–2 days)\n❌ Not allowed (expired/opened)\n➡ Examples: Cooked meal from today; sealed pack near expiry"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Clothes -->
+                    <TextView
+                        android:id="@+id/item_clothes_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="👕 Clothes"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/item_clothes_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="✅ Like new\n⚠ Used but clean\n❌ Not allowed (torn, stained)\n➡ Example: Washed, wearable, no damage"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Household -->
+                    <TextView
+                        android:id="@+id/item_household_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🏠 Household Items"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/item_household_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="✅ Fully functional\n⚠ Minor issues (e.g., scratch)\n❌ Not allowed (broken, missing parts)\n➡ Examples: Table with scratch; blender with all parts" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Policy Boundaries Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_boundaries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:id="@+id/container_boundaries"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#CCD1B2EA"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/boundaries_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Policy Limitations / Boundaries"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/boundaries_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Allow only predefined categories (food, clothes, furniture)\n• Require photo upload + condition rating\n• Require expiration date for food entries\n• Add a flag/report system for misuse\n• Limit donations to users within 10km radius"
+                        android:lineSpacingExtra="4dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- SDG Goals Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_sdgs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:id="@+id/container_sdgs"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#CCD1B2EA"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/sdgs_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sustainable Development Goals (SDGs)"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/sdgs_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🟩 SDG 1 – No Poverty\nProvides access to essential goods for people in need.\n\n🟦 SDG 2 – Zero Hunger\nRedistributes edible food instead of it going to waste.\n\n🟧 SDG 12 – Responsible Consumption and  Production\nReduces waste by encouraging reuse of clothes, furniture, and food."
+                        android:lineSpacingExtra="6dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

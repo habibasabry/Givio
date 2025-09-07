@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#232323</color>
+    <color name="white">#65773C</color>
+    <color name="navy">#001D6C</color>        <!-- page bg -->
+    <color name="card_green">#DFFF93</color>  <!-- card background -->
+    <color name="card_text">#0B3D91</color>   <!-- title color -->
+    <color name="muted_text">#000000</color>  <!-- description color -->
+    <color name="search_bg">#FFFFFF</color>
+    <color name="card">#F6B7B3</color>
+    <color name="transparent">#00000000</color>
+
+</resources>
