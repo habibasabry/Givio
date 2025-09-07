@@ -15,11 +15,6 @@
 
 
 
-## 📱 Screenshots
-
-![Home Screen](images/home_screen.png)
-
-
 
 ## 🛠️ Technologies Used
 
